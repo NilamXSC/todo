@@ -47,6 +47,5 @@ User authentication with backend integration.
 Task categorization (Work, Personal, etc.).
 Dark/Light mode toggle.
 Sync tasks across devices.
-👨‍💻 Auth
 
-Developed by Nilam Chakraborty ✨
+Developed by Nilam Chakraborty.
