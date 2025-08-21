@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="theme-color" content="#fbbf24" />
+  <title>My Tasks • Arcadia To-Do</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <button class="back-btn" onclick="location.href='index.html'">←</button>
+      <h1>📋 My Tasks</h1>
+    </div>
+    <div class="nav-right" id="authArea">
+      <button class="btn ghost" onclick="location.href='auth.html'">Sign In</button>
+      <button class="btn" onclick="location.href='auth.html'">Sign Up</button>
+    </div>
+  </header>
+
+  <main class="main-only">
+    <section class="todo-card">
+      <div class="list-header">
+        <h2>All Saved Tasks</h2>
+        <div>
+          <button class="chip small" data-bulk="markAll">Mark All Done</button>
+          <button class="chip small danger" data-bulk="clearAll">Clear All</button>
+        </div>
+      </div>
+
+      <div class="filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="active">Active</button>
+        <button class="chip" data-filter="completed">Completed</button>
+      </div>
+
+      <ul id="allTasksList" class="task-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

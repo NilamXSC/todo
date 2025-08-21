@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="theme-color" content="#fbbf24" />
+  <title>Arcadia To-Do</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Rotate prompt for small devices in landscape -->
+  <div class="rotate-overlay" id="rotateOverlay">
+    <div class="rotate-card">
+      <div class="rotate-icon">📱↻</div>
+      <p>Best viewed in <b>portrait</b>. Please rotate your phone.</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <button class="hamburger" id="menuToggle" aria-label="Toggle menu">☰</button>
+      <h1>📝 Arcadia To-Do</h1>
+    </div>
+    <div class="nav-right" id="authArea">
+      <!-- Filled by script.js (Sign In/Up or Hi, Name + Sign Out) -->
+      <button class="btn ghost" onclick="location.href='auth.html'">Sign In</button>
+      <button class="btn" onclick="location.href='auth.html'">Sign Up</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <h2>Dashboard</h2>
+      <ul class="sidebar-menu">
+        <li>
+          <a class="sidebar-link" href="mytasks.html">
+            📋 My Tasks <span class="badge" id="taskCount">0</span>
+          </a>
+        </li>
+        <li><button class="sidebar-link" id="clearAllBtn">🧹 Clear All</button></li>
+        <li><button class="sidebar-link" id="toggleThemeBtn">🎨 Theme</button></li>
+        <li><button class="sidebar-link" id="progressBtn" disabled>📊 Progress (soon)</button></li>
+      </ul>
+
+      <h3 class="sidebar-subtitle">Quick Peek</h3>
+      <ul id="sidebarTaskList" class="sidebar-tasks"></ul>
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+      <section class="hero">
+        <h2>Build Healthy Habits with Your Tasks</h2>
+        <p class="muted">Start small · Be consistent · Track progress · Stay accountable</p>
+      </section>
+
+      <section class="todo-card">
+        <div class="todo-input">
+          <input type="text" id="taskInput" placeholder="Enter a new task..." />
+          <button id="addTaskBtn" class="btn">Add</button>
+        </div>
+
+        <div class="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="active">Active</button>
+          <button class="chip" data-filter="completed">Completed</button>
+        </div>
+
+        <ul id="taskList" class="task-list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
