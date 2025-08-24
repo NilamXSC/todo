@@ -38,7 +38,7 @@ Portrait mode on mobile is fully supported.
 
 🛠️ How to Run
 Clone the repository:
-git clone https://github.com/NilamXSC/todo-app.git
+git clone https://github.com/NilamXSC/todo.git
 Open the project folder in VS Code or any editor.
 Run index.html in your browser.
 
