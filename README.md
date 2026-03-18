@@ -6,7 +6,7 @@ This project helps users create, manage, and track tasks with ease.
 The app includes:
 Landing Page (index.html): Add new tasks and navigate through the dashboard.
 Dashboard: Access quick links and settings.
-My Tasks Page (mytasks.html): View all saved tasks in one place.
+My Tasks Page (mytasks.html): View all saved tasks in one place.s
 Authentication Page (auth.html): Sign in or Sign up to create an account.
 
 Features :
