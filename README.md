@@ -7,7 +7,7 @@ The app includes:
 Landing Page (index.html): Add new tasks and navigate through the dashboard.
 Dashboard: Access quick links and settings.
 My Tasks Page (mytasks.html): View all saved tasks in one place.
-Authentication Page (auth.html): Sign in or Sign up to create an account.
+Authentication Page (auth.html): Sign in or Sign up to create an accounts
 
 Features :
 Add tasks from the home page.
